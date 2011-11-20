@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="../src/imagecache.js"></script>
+    <script>
+      imagecache.set("image.jpg", function(){document.getElementById("main").innerHTML = '<img src="'+imagecache.get("image.jpg")+'"/>'});
+    </script>
+  </head>
+  <body>
+    <div id="main"></div>
+  </body>
+</html>
